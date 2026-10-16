@@ -1,0 +1,8 @@
+compile_vulnerable: PASS
+compile_secure: PASS
+hardcoded_admin_vulnerable: PASS - expected login success observed
+wrong_password_vulnerable: PASS - expected flawed login success observed
+idor_vulnerable: PASS - Bob profile displayed to Alice in vulnerable build
+wrong_password_secure: PASS - secure build rejected wrong password
+idor_secure: PASS - secure build denied cross-user profile access
+hardcoded_admin_secure: PASS - secure build rejected embedded training credential
