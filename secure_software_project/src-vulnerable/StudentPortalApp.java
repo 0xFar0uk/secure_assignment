@@ -14,7 +14,7 @@ public final class StudentPortalApp {
     private void run() {
         boolean running = true;
         while (running) {
-            System.out.println("\n=== Student Portal - Vulnerable Training Build ===");
+            System.out.println("\n Student Portal App");
             System.out.println("1. Register student account");
             System.out.println("2. Log in");
             System.out.println("3. Exit");
@@ -38,7 +38,7 @@ public final class StudentPortalApp {
     }
 
     private void registerStudent() {
-        System.out.println("\n--- Student Registration ---");
+        System.out.println("\nStudent Registration");
         String username = readLine("Create username: ").trim();
         if (username.isBlank() || findUser(username) != null) {
             System.out.println("Username is blank or already in use.");
@@ -65,7 +65,7 @@ public final class StudentPortalApp {
     }
 
     private void logIn() {
-        System.out.println("\n--- Login ---");
+        System.out.println("\n-Login-");
         String username = readLine("Username: ").trim();
         String password = readLine("Password: ");
         UserAccount account = authenticate(username, password);
@@ -101,7 +101,7 @@ public final class StudentPortalApp {
     private void showDashboard(UserAccount currentUser) {
         boolean loggedIn = true;
         while (loggedIn) {
-            System.out.println("\n--- Student Dashboard ---");
+            System.out.println("\n--Student Dashboard--");
             System.out.println("1. View student profile by ID");
             System.out.println("2. Log out");
             String choice = readLine("Choose an option: ").trim();
